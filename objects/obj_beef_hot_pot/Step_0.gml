@@ -12,20 +12,20 @@ if is_slowdown{
 //检测自身右方是否有敌人
 var has_enemy = false
 if shape < 2{
-        with(obj_enemy_parent){
-                if (grid_row == other.grid_row && grid_col >= other.grid_col && grid_col <= (other.grid_col + 4) && can_target_on(other.target_type,target_type)){
-                        has_enemy = true
-                        break
-                }
-        }
+	with(obj_enemy_parent){
+		if (grid_row == other.grid_row && grid_col >= other.grid_col && grid_col <= (other.grid_col + 4) && can_target_on(other.target_type,target_type)){
+			has_enemy = true
+			break
+		}
+	}
 }
 else{
-        with(obj_enemy_parent){
-                if (grid_row == other.grid_row && grid_col >= other.grid_col && grid_col <= (other.grid_col + 5) && can_target_on(other.target_type,target_type)){
-                        has_enemy = true
-                        break
-                }
-        }
+	with(obj_enemy_parent){
+		if (grid_row == other.grid_row && grid_col >= other.grid_col && grid_col <= (other.grid_col + 5) && can_target_on(other.target_type,target_type)){
+			has_enemy = true
+			break
+		}
+	}
 }
 //攻击逻辑
 var wait_time = cycle - attack_anim * current_flash_speed;
