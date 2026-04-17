@@ -275,9 +275,14 @@ function slots_init(){
 	    {"shape":1, "sprite":spr_beef_hot_pot_icon_1, "cost":175, "cooldown":7*60, "description":"酸汤肥牛锅：向前方4格持续喷出火焰","plant_type":"normal","feature_type":"normal","target_card":"none"},
 		{"shape":2, "sprite":spr_beef_hot_pot_icon_2, "cost":175, "cooldown":7*60, "description":"海鲜肥牛锅：向前方5格持续喷出火焰","plant_type":"normal","feature_type":"normal","target_card":"none"}
 	])
+	register_card("shengjian_pot", obj_shengjian_pot, [
+	    {"shape":0, "sprite":spr_shengjian_pot_icon, "cost":150, "cooldown":7*60, "description":"生煎锅：生煎锅：向前方四格内投掷生煎，产生十字火焰持续灼伤老鼠","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_shengjian_pot_icon_1, "cost":150, "cooldown":7*60, "description":"水煎包锅：向前方四格内投掷生煎，产生十字火焰持续灼伤老鼠","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_shengjian_pot_icon_2, "cost":150, "cooldown":7*60, "description":"驴肉火烧锅：向前方四格内投掷生煎，产生3×3范围火焰持续灼伤老鼠","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	])
 	register_card("spicy_pot", obj_spicy_pot, [
-	    {"shape":0, "sprite":spr_spicy_pot_icon, "cost":300, "cooldown":7*60, "description":"麻辣香锅：蓄力后向前方区域喷射火焰墙","plant_type":"normal","feature_type":"normal","target_card":"none"},
-	    {"shape":1, "sprite":spr_spicy_pot_icon_1, "cost":300, "cooldown":7*60, "description":"孜然羊肉锅：蓄力后向前方区域喷射火焰墙","plant_type":"normal","feature_type":"normal","target_card":"none"},
-		{"shape":2, "sprite":spr_spicy_pot_icon_2, "cost":300, "cooldown":7*60, "description":"酱香鱿鱼锅：蓄力后向前方区域喷射火焰墙","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	    {"shape":0, "sprite":spr_spicy_pot_icon, "cost":300, "cooldown":35*60, "description":"麻辣香锅：蓄力后向前方区域喷射火焰墙","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_spicy_pot_icon_1, "cost":300, "cooldown":35*60, "description":"孜然羊肉锅：蓄力后向前方区域喷射火焰墙","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_spicy_pot_icon_2, "cost":300, "cooldown":35*60, "description":"酱香鱿鱼锅：蓄力后向前方区域喷射火焰墙","plant_type":"normal","feature_type":"normal","target_card":"none"}
 	]);
 }
